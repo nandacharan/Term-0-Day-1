@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Webpage</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Stylish gradient background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1em;
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5); /* Transparent black background for content */
+            padding: 2em;
+            border-radius: 100px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to RDS</h1>
+        <h2> Term 0 - Git & GitHub (Day-1)</h2>
+        <h3>Types of Version Control Systems </h3>
+<p>
+<h3>1. Local Version Control Systems (Local VCS)</h3><br>
+<b> Definition:</b> Local VCS stores all versions of files on the same local machine. It keeps track of changes by maintaining a simple database of all the modifications made to files.
+   <br> <b>Advantages: </b>Simple to use, fast, and does not require network access.
+   <br><b>Disadvantages:</b> Not suitable for collaborative work because each developer has their own local repository, leading to difficulties in merging changes.
+   <br><b>Example:</b> RCS (Revision Control System), which stores patch sets (differences between files) in a special format on the disk.
+
+<h3>2. Centralized Version Control Systems (Centralized VCS)</h3>
+<br> <b>- Definition:</b> Centralized VCS uses a central server to store all versions of files. Users check out files from this central server and commit changes back to it.
+
+<br> <b>- Advantages:</b> All team members can see each other's changes, and the central repository acts as a single source of truth.
+<br> <b>- Disadvantages:</b> If the central server goes down, no one can collaborate or commit changes. Network connectivity is crucial for accessing the repository.
+<br> <b>- Examples: </b>
+<br>  <b>=> CVS (Concurrent Versions System):</b> One of the earliest VCS systems that allows multiple developers to collaborate.
+<br>   <b>=> Subversion (SVN):</b> A more advanced and feature-rich version of CVS, providing atomic commits, directories, and file renaming.
+
+<h3> 3. Distributed Version Control Systems (Distributed VCS)</h3>
+<br><b>- Definition:</b> Distributed VCS allows every user to have a complete copy of the repository, including its history, on their local machine. Changes can be shared between repositories, and each copy is a full backup of the entire history.
+<br> <b>- Advantages:</b> 
+<br>  <b> => Collaboration:</b> Developers can work offline, committing changes to their local repository and later syncing with others.
+<br>   <b>=> Resilience:</b> Since each developer has a full copy of the repository, it is less vulnerable to data loss.
+<br>   <b>=> Flexibility:</b> Users can manage branches and merges more efficiently, leading to better collaboration and version tracking.
+<br> <b>- Disadvantages:</b> 
+<br>   <b>=> Complexity:</b> More advanced, requiring developers to learn additional commands and concepts.
+<br> <b>- Examples: </b>
+<br>  <b> => Git:</b> The most popular VCS, created by Linus Torvalds for managing the Linux kernel. Git is known for its speed, efficiency, and branching capabilities.
+<br>  <b> =>Mercurial:</b> Similar to Git, but with a focus on ease of use and simplicity, making it a favorite for those who prefer a more straightforward tool.
+
+<h3>4. Cloud-Based Version Control Systems</h3>
+<br><b>- Definition:</b> Cloud-based VCS are hosted on cloud platforms, combining the benefits of distributed VCS with the advantages of cloud storage.
+<br> <b>- Advantages:</b> 
+<br>   <b>=>Accessibility:</b> Easily accessible from anywhere with an internet connection.
+<br>   <b>=>Integration:</b> Often integrates with other development tools, such as CI/CD pipelines, issue tracking, and project management software.
+<br> <b>- Disadvantages:</b> (Dependency on Internet) Requires an internet connection for access and collaboration.
+<br> <b>- Examples: </b>
+<br>   <b>=> GitHub:</b> A cloud-based platform built on top of Git, providing hosting, collaboration, and code review features.
+<br>  <b> => GitLab:</b> Similar to GitHub, but with additional features like integrated CI/CD and DevOps capabilities.
+<br>   <b>=> Bitbucket:</b> A cloud-based service that supports both Git and Mercurial repositories, often used in conjunction with Atlassian’s suite of tools.
+
+<h3>Conclusion</h3>
+Each type of Version Control System has its strengths and is suited to different scenarios. Local VCS is simple and fast but lacks collaborative features, Centralized VCS is effective for team collaboration but depends on a central server, and Distributed VCS provides flexibility, resilience, and enhanced collaboration but with added complexity. Cloud-based VCS combines the benefits of distributed systems with the convenience of cloud infrastructure, offering an all-in-one solution for modern development teams.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gLoINI1KVWc?si=l8DGml6V6xLawZ5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+ 
+</body>     
+</html>
